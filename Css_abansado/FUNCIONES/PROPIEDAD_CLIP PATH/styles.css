@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: cursive;
+    background-color: rgba(9, 27, 48, 0.979);
+}
+
+/*clip-path: circle(90% at 100% -20px); podemos definir un circulo, el primer valor,referencia la forma en que funciona el radio de la circunferencia, toma un radio de el 90% de la imagen y trasa su diametro entonses trasara un circulo del todo, el segundo valor luego de el at, es la posicion de el circulo, comensara en el 100% de la imagen en el eje de las X y a -20px en el eje de las Y*/
+
+/*clip-path: ellipse(30% 70% at 100px ); pero algo que se hace mucho es usar generadores de clip-path, segun como lo necesites, y con formas muy variadas, ejemplo poligonos*/
+
+/*basicamente nos permite generar puntos para trabajar con ellas, pero por ejemplo si quiero generar formas propias podemos usar los generadores, para crearlas*/
+
+img{
+    max-width: 100%;
+    clip-path: ellipse(30% 70% at 100px );
+    height: 100dvh;
+    position: absolute;
+    z-index: -10;
+}
+
+header{
+    padding: 30px;
+    background-color: color-mix(in srgb, #44d 10%, #484848 90%);
+}
+
+
+/*intente algo medio raro pero creo que funciona por ahora, el azul de el fondo esta fino, pero no puedo encontrar combinaciones al provar */

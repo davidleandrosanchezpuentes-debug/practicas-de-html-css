@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #ccc;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #48e;
+    margin: auto;
+    margin-top: 100px;
+    border: 5px solid #0006;
+    transition: background-color 1s;
+}
+
+input{
+    border: none;
+    border-top: 2px solid #000;
+    margin: 20px;
+    padding: 6px;
+    /*outline: 30px solid #000; sirve por ejemplo para hacer un focus*/
+}
+
+/*el outline es la propiedad de borde que aparece por ejemplo en el INPUT y sale cuando hacemos focus, y funciona igual que los bordes, pero no ocupa espacio para nada */
+
+input:focus{
+    border-color: blue;
+    color: blue;
+}
+/*me permite cambiar el outline, sin que la pagina pierda accecibilidad*/
+input:focus-visible {
+    outline: none;
+}
+
+.box:hover{
+    background: #0000;
+    outline: 20px solid #000;
+    color: #48e;
+    text-align: center;
+}
+/*y por ultimo hay una propiedad  que se llama outline-offset: 10px, este es para que alla una separacin en el outline y el borde de mi caja, es como un paddin que no ocupa espacio, pero es visible */

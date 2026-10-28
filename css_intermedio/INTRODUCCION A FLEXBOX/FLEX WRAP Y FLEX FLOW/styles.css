@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div, body{
+    box-sizing: border-box;
+}
+
+/*segun dalto flexbox es lo mas importante de todo, segun el */
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/       
+    
+    
+    /*este nos permite lograr que los elementos bajen para no cambiar su tamaño original */
+    height: 100vh;
+}
+/*lo loco es que aqui como que pierde lo flexible pero mas adelante vere como mesclar cosas */
+
+/*flex-flow: abrevia propiedades, significa flujo flexible */
+.flex-item{
+    width: 250px;
+    background: #911;
+    margin: 10px;
+    color: #ccc;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.flex-item:first-child{
+    background: #000;
+}
+
+.flex-item:last-child{
+    background: #68a;
+}

@@ -1,0 +1,37 @@
+/*selector por atributo */
+img[src^="paisaje"] {  /* llama a la imagen en funcion de el nombre (($) termina con (^) empiesa con ) segun si el nobre comienza o termina con algo. vasicamente el antes y despues del (.) mano.png*/
+    width: 100%;
+}
+/* Selectores desendientes */
+
+
+ul strong{
+    color: green;
+}
+/*selector por hijo directo */
+ul > li {
+    color: red;
+}
+/* en casos de hijos directos, no solo elementos que estan dentro */
+/*ul > li {} asi se ve */
+
+/*al igual que los ayecentes se puede extender la gerarquia, por ejemplo, un (ul > li > strong) esto para los estilos del strong*/
+/*selectores adyacentes*/
+
+/*seleciona el elemento que esta proximo no fuera ni dentro, sino siguiente */
+/*selector de hermano ayacente */
+h1 + p{
+    color: blueviolet;
+} /*para hacerlo que se aplique a todos los parrafos despues de el h1 la notacion es h1 ~ p*/
+
+/*h1 + p + p{
+
+} en este caso le puedo dar un estilo al segundo parrafo y asi susecibemente*/
+
+
+/*selectores a hermanos generales */
+h1 ~ p{
+    color: blueviolet;
+}
+
+/* estas son las mas comunes */

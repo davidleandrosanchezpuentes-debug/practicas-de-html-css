@@ -1,0 +1,61 @@
+body{
+    background: #adadad;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*aqui usare el position relative para usarlo como punto de referencia para el box rojo de posicion absoluta*/
+.contenedor{
+    border: 2px solid #000;
+    margin: 100px;
+    background: #fff;
+    position: relative;
+    z-index: -20;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    color: #ededed;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/*posicion absolute*/
+
+.box__red{ /*2- en la position absoluta el box toma como referencia la etiquetaa raiz, eso quiere decir que su top 0 y el left 0 es el inicio de la pagina*/
+    background: red;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+/*3- box rojo ahora se mueve en consecuencia a el contenedor relativo */
+
+/*1- lo primero, si yo le doy al cuadrado un position absolute, no ocupa mas espacio en la pagina, pero tambien pasa que se pocisiona por delante de el resto de las cajas, por eso al darle pocision absoluta al cuadro rojo el verde quedo debajo*/
+
+.box__blue{
+    background: blue;
+    position: relative;
+    z-index: -10;
+}
+
+.box__green{
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+} /*aqui intente centrar el box verde con el absolute,     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}  y estas propiedades*/
+
+
+/*otra cosa, el absolute entra en el contexto de apilamuento, es por eso que esta en frete del resto pero si agregamos un relative este se va al frente dependiedo de la posicion en que se encuentre, es decir si lo genere despues se queda como una capa superior, y visebersa */

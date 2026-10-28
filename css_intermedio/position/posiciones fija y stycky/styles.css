@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.contenedor{
+    padding: 100px;
+    background: #666;
+
+}
+
+/*la posicion fixed se comporta como absoluta, pero siempre usa como referencia el codigo raiz, (html) y la tra es que sin importar si la pagina hace scroll este conserva su posicion*/
+.box{
+    width: 300px ;
+    height: 100px;
+    background: #48e;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 2px 10px 0 #000;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/*el valor de posicion styki funciona como una caja de posicion relativa hasta alcanzar la altura establecida una vez alcanzada se conporta como fixed*/
+.box_stycky{
+    width: 300px ;
+    height: 100px;
+    background: #48e;
+    position: sticky;
+    top: 20px;
+}
+
+.hola{
+    top: 130px;
+}
+
+.fixed{
+    top: 240px;
+}
+
+.last{
+    top: 350px;
+}
+
+
+

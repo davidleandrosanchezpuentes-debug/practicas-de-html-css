@@ -1,0 +1,35 @@
+table{
+    padding: 10px;
+    color: #3d3027;
+    max-width: 800px;
+    background-color: #F6e6dc;
+    margin: 60px auto;
+    border-radius: 20px;
+}
+
+.thead{
+    color: #e49540;
+}
+
+.tbody__subtitle{
+    font-weight: bolder;
+    
+}
+
+.tbody__data{
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+td, th{
+    border: solid 2px #d7b8a6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.tbody__encabezados{
+    background-color: #84aea5;
+}
+

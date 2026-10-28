@@ -1,0 +1,37 @@
+/*FUNCION CLAC NOS PERMITE HACER CALCULOS, ARIGMETICA BASICA*/
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #48e
+}
+
+/*esto nos permite combinar medidas fijas con medidas relativas */
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    --tamaño-principal: 2.4rem
+}
+
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp(var(--tamaño-principal, 2.2vw, 4rem));
+    border: 6px solid #000;
+    /*width: calc(100% - 200px);*/
+    width: calc(60% + 200px);/*estas dos son muy interesantes esta muy fino la verdad*/
+}
+
+.box:first-child{
+    height: 100px;
+}
+
+.box:nth-child(2){
+    height: calc(100vh - 100px)/*aqui dije la altura del elemento sera de 100vh, menos la altura del otro elemento, y ya nada se desvorda, de esta forma siempre se adadta*/
+    /*y si se le ponen variables, podemos cambiar el tamaño del otro elemento y siempre se va a adadtar */
+}
+

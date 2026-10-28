@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #999;
+}
+/*overflow esta propiedad me permite determinar como interactua el cubo con lo que sobre sale */
+div{
+    background: #48e;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 150px;
+    border: 2px solid #222;
+    color: #f00;
+    overflow: hidden;
+    display: inline-block;
+}

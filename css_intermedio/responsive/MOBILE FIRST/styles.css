@@ -1,0 +1,155 @@
+/*MOBILE FIRST: es basicamente desarrollar primero orientado a moviles y luego lo addatamos para otros dispocitivos mas grandes */
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header, footer, .main__wrapper{
+    width: 100%;
+}
+
+/*HEADER*/
+
+.header{
+    background-color: #48e;
+}
+
+.main__wrapper{
+    max-width: 1100px;
+
+}
+
+.main__navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.main__navbar li {
+    margin: 4px;
+}
+
+.main__navbar a{
+    color: #ccc;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+}
+
+/* MAIN SECTION */
+
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.main__wrapper aside {
+    flex-grow: 1;
+    
+}
+
+main{
+    min-width: 400px;
+}
+
+
+
+main, aside{
+    padding: 20px;
+    flex-basis: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px #222;
+}
+
+main h1, aside h2{
+    text-wrap: balance;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+main p, aside p{
+    text-align: justify;
+    text-wrap: pretty;
+    padding: 20px;
+}
+
+aside:last-child{
+    min-width: 10rem;
+    padding: 15px;
+    display: none;
+}
+
+.secondary__navbar {
+    min-width: 9rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.secondary__navbar li{
+    margin-top: 40px;
+    list-style: none;
+}
+
+.secondary__navbar a {
+    color: #48e;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    margin-top: auto;
+    padding: 50px;
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+}
+
+/*medias */
+
+
+@media screen and (min-width: 600px) {
+    .main__wrapper{
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    aside:last-child{
+        display: block;
+    }
+    
+}
+
+/*ESTADO DE HOVER*/
+
+a:hover{
+    opacity: 0.6;
+}

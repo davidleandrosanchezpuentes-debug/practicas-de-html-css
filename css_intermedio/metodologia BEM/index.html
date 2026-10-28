@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODOLOGÍA BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- (BEM) significa bloques, elementos y modificadores  -->
+<body>
+    <h1 class="titulo">INGREDIENTES</h1>
+    <!--usamos la metodologia bem para nombrar de forma correta la lista y los elementos de la lista como items dentro de la misma, y las segunda clase de una clase modificadora, pero para que sea parte de la metodologia se debe nobar con el nombre de el elemento, como el elemeto es un item, entonces se nobra en cosecuencia -->
+    <ul class="lista lista--invalida">
+        <li class="lista__item item--dañino" >SAL</li>
+        <li class="lista__item">PAPA</li>
+        <li class="lista__item item--importante">HARINA</li>
+        <li class="lista__item">AGUA</li>
+    </ul>
+
+    <ul class="lista lista--invalida">
+        <li class="lista__item item--dañino" >SAL</li>
+        <li class="lista__item">PAPA</li>
+        <li class="lista__item item--importante">HARINA</li>
+        <li class="lista__item">AGUA</li>
+    </ul>
+
+    <ul class="lista">
+        <li class="lista__item item--dañino" >SAL</li>
+        <li class="lista__item">PAPA</li>
+        <li class="lista__item item--importante">HARINA</li>
+        <li class="lista__item">AGUA</li>
+    </ul>
+</body>
+</html>

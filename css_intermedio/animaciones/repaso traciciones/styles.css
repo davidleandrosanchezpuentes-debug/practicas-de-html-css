@@ -1,0 +1,52 @@
+body{
+    background-color: #ccc;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.barra{
+    border: 2px solid #f00;
+    padding: 5px;
+    border-radius: 35px;
+    transition: border-color 3s;
+    background-color: #fff;
+}
+/*steps() es una funcion que nos define la cantidad de saltos que hara un elemento, para poder llegar a trancicionar, piensalo como los fps, de la animacion 2D, si la tracicion entre fotogramas es muy larga no se vee fluido, pero a su vez al reducirse me recuerda mucho a como se pierde vida en los juegos, como por secmentos dependiendo la cantidad de el daño */
+
+.barra__loudign{
+    padding: 30px;
+    width: 0%;
+    background-color: #f00;
+    border-radius: 29px;
+    transition: width 3s steps(6), background-color 3s steps(6);
+}
+
+.barra:active .barra__loudign{
+    width: 100%;
+    background-color: #48e;
+    transition-duration: 3s;
+}
+
+.barra:active{
+    border-color: blue;
+}
+
+/*esto es para cunado el navegador nos permite usar un media queries para limitar las animaciones, ya sabes para no matar a un epilectico, ellos pueden usaer erramientas de google para limitar las animaciones, y en ese caso la pagina mostrara los estilos que definamos en esta seccion*/
+
+/*----SECCION DE ACCESIBILIDAD ----*/
+
+@media (prefers-reduced-motion: reduce){
+    .barra:active .barra__loudign{
+    width: 100%;
+    background-color: #48e;
+    transition-duration: 5s;    
+    }
+
+.barra:active{
+    border-color: blue;
+}
+}
+
+/*usar con precaucion*/

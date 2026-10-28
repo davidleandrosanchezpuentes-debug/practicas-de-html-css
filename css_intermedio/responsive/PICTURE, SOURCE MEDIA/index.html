@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><!--ES PARA DAR OPCIONES AL NAVEGADOR, funciona similar a un selec y opcion, pues son la etiqueta picture con la etiqueta source con el atributo srcset-->
+    <!--media es el atributo que semanticamente es mas apropiadeo que el atributo srcset y sizes de la anterior practica basicamente me permite decir al navegador que quiero que si la pantalla es de cierto tamaño pues que muestre cierrta imagen-->
+    <!--tambien nos permite poner las imagenes en el orden de prioridades, hay algo que se llama, imagen.webp y es mas amigable con los navegadores, puedo convertirla con sitios similares la love pdf por ejemplo-->
+    <!--se usa para que pargue una imagen desde deferentes resoluciones, pero claro esto depende del tamño de la imagen que requerimos para que el tiempo de carga sea mas velos-->
+    <!--para la imagen tipo webp pe se pone, source srcset="imagen.webp" type="image/webp y corre mejor en el navegador"-->
+    <picture>
+        <source media="(max-width: 300px)" srcset="dalto.png">
+        <source media="(max-width: 600px)" srcset="dalto_pequña.png">
+        <source media="(min-width: 1000px)" srcset="descarga.png">
+        <img src="dalto.png" alt="">
+    </picture>
+</body>
+</html>

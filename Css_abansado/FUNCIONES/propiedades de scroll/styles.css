@@ -1,0 +1,35 @@
+/*se pueden manipular las propiedades del scroll*/
+
+/*    scroll-behavior: smooth; esta ya la conocia pero basicamento nos afecta la suabidad de bajar o subir en enlaces, para que no tenga una velocidad tan bruta o brusca */
+
+/*scrollbar-color: #f44 #48e; nos permite cambiar el color de nuestra barra de scroll, solo requiere de dos colores y funcionara */
+
+
+/*scrollbar-width: none; nos saca el scroll, le quita el tamaño por completo*/
+
+/*scrollbar-width: thin; pone el scroll super finito, chiquitito, y quisas no es lo mas recoment¿dable por temas de acecibilidad, se usa pero usa colores mas notorios */
+
+/*scrollbar-width: auto; el normal de simpre que el navegador genera */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+.box{
+    font-size: 30px;
+    padding: 0 40px;
+    border: 6px solid;
+    width: 50%;
+    height: 100dvh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #f44 #ccc;
+    scrollbar-width: thin;
+    
+}

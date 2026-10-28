@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #fff;
+}
+/*en principio el dialog no queria aceptar la clase pero al final parece ser por que tenia el open antes de la clase*/
+.dialog {
+    background: #000a;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.modal__content{
+    background: #ccc;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.modal__title{
+    margin-top: 10px;
+}
+
+.modal__close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    font-weight: bolder;
+}

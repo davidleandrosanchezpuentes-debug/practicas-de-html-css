@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMET</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--ul>li>a>holas-->
+    <ul>
+        <li><a href=""></a></li>
+    </ul>
+
+    <!--ul>li*3-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!--ul>li*3>a-->
+    <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+
+    <!--otra forma, ul>(li>a)*4-->
+    <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <!-- para agregar clases le ponemos el (.)  ul.lista>li.lista__item*3>a.item__link-->
+    <ul class="lista">
+        <li class="lista__item">
+            <a href="" class="item__link"></a>
+        </li>
+        <li class="lista__item">
+            <a href="" class="item__link"></a>
+        </li>
+        <li class="lista__item">
+            <a href="" class="item__link"></a>
+        </li>
+    </ul>
+
+    <header>
+        <nav>
+            <ul class="nav__list">
+                <li class="list__item">
+                    <a href="" class="item__link"></a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="item__link"></a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="item__link"></a>
+                </li>
+                <li class="list__item">
+                    <a href="" class="item__link"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--esto es para el contenido, por ejemplo del a {} con las llaves se pone el contenido en este caso link-->
+    <ul class="lista">
+        <li class="lista__item"><a href="" class="item__link">link</a></li>
+        <li class="lista__item"><a href="" class="item__link">link</a></li>
+        <li class="lista__item"><a href="" class="item__link">link</a></li>
+    </ul>
+    <!--ul.lista>li.lista__item*3>a.item__link{link $} esto es para que valla numericamente, auto incrementable se llama, por cierto  -->
+    <ul class="lista">
+        <li class="lista__item"><a href="" class="item__link">link 1</a></li>
+        <li class="lista__item"><a href="" class="item__link">link 2</a></li>
+        <li class="lista__item"><a href="" class="item__link">link 3</a></li>
+    </ul>
+</body>
+</html>

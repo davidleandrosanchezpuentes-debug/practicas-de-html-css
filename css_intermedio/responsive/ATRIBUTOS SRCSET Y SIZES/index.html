@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+        <!--esta seccion es un poco mas de html,-->
+    <!--estos atributos nos permitiran llegar a sugerir al navegador el como cargar imagenes responsive, y que determine cual es la imagen adecuada para cargar la pagina -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="dalto_pequña.png" alt="dalto posando" srcset="dalto_pequña.png 400w, dalto.png 800w, descarga.png 1000w" sizes="(max-width: 400px) 300px, (max-width: 600px) 500px, 900px">
+</body>
+<!--srcset me sirve para pedir a el navegador que muestre diferentes imagenes ddependiendo del width de el dispositivo en que se genera sizes= define un alto o una condicion y es una mediaqueri-->
+</html>

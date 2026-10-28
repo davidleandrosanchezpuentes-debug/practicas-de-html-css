@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+/*display block: permite que un elemento en linea se bueleva un bloque tal como el div*/
+
+div{
+    background: #666;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    margin: 20px;
+    padding: 30px;
+    background-color: #48e;
+    width: 100%;
+    display: block;
+    margin: 0;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+/*tambien podemos hacer que un elemento en bloque se vuelva en linea con la propiedad, display: inline */
+
+
+p{
+    display: inline;
+    margin: 20px;
+    background: #48e; padding: 10px;
+}
+
+

@@ -1,0 +1,93 @@
+/*(:root) esta propiedad tal cual y a secas, selecciona al elemento raiz pero no es tan util a mi parecer */
+
+
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+/*hover cuando pasamos el mauz por sobre el elemento*/
+h1:hover{
+    color: #000;
+    background: #444;
+    font-weight: bolder;
+    padding: 10px;
+}
+/*cuando clickeamos el elemento le cambia el estilo*/
+h1:active{
+    color: #fff;
+}
+
+/*para selecionar el primer y el ultimo elemento y el retos como elementos indibiduales */
+ul{
+    background-color: #999;
+    border-radius: 7px;
+}
+
+/*selecciona el color de solo le primer elemento */
+li:first-child{
+    color: #f00;
+}
+/*permite cambiar las propiedades de los elementos intermedios segun su posicion en este caso la cuarta*//*li:nth-child(4){
+    color: #00f;
+}*/
+li:nth-child(2n){
+    color: #00f;
+    background: #fff;
+}
+/*seleciona solo el color del ultimo elemento*/
+li:last-child{
+    color: #0f0;
+}
+
+ul li{
+    color: #f00;
+}
+/*le dimos ahora una clase a todos los elementos dentro del ul, al usar una clase sobre escribimos todo lo demas, luego le dimos una clase a una de los li, y le pedimos que cambiara el estilo a todo menos a el li al cual le dimos una clase y lo excluyo*/
+.lista li:not(.elemen){
+    color: #ffa500;
+}
+
+
+/*seleccion de elementos basios*/
+div:empty{
+    background: #48e;
+    padding: 20px;
+}
+/*esto en caso de que por ejemplo use un div con siertas carateristicas para lo que tiene por dentro pero, si por ejemplo sacamos lo que el div contine los valores que le dimos al div no nos sirven mas entonces esto nos faborese para cambiar los valores en caso de que ahora este vasia */
+
+input[type="checkbox"]{
+    margin: 50px;
+    width: auto;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+/*seleccion de enlaces cuando no estan visistados */
+
+a:link{
+    color: red;
+}
+
+/*selecion de enlases visitados */
+
+a:visited {
+    color:green
+}
+
+
+/*este ultimo apartado es para otorgarle unas propiedades en el caso de que el  input sea o no valido */
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input:invalid {
+    color: red;
+}
+input:valid{
+    color: green;
+}

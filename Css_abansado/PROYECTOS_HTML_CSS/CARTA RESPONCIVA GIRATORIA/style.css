@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    --bg-color: color-mix( in srgb, #f62 70%, #fff);
+    --card-color: #fff;
+    --card-bg-color: #fff9;
+    --dark-color: #f62;
+    background-color: var(--bg-color);
+}
+
+
+.card{
+    max-width: clamp(160px, 50%, 320px);
+    background-color: var(--card-color);
+    margin: 50px auto;
+    position: relative;
+    background-color: var(--card-bg-color);
+}
+
+.card__front, .card__back{
+    backface-visibility: hidden;
+    transition: transform 1s;
+    background-color: var(--card-color);
+}
+
+.card__front{
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.card__back{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card:hover .card__back{
+    transform: perspective(1000px) rotateY(360deg);
+}
+
+.card:hover .card__front{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+
+.card__worker{
+    height: 200px;
+    overflow: hidden;
+    display: block;
+}
+
+.card__worker img{
+    max-width: 100%;
+}
+
+.card__data{
+    padding: 12px;
+}
+
+.card__data span{
+    font-size: 1.4rem;
+    margin: 6px 0;
+}
+
+
+.card__back span{
+    font-size: 1.5rem;
+    margin: 6px 0;
+}
+
+.skills__bar{
+    border: 3px solid var(--dark-color);
+    margin: 20px 12px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.skills__bar div{
+    background-color: var(--bg-color);
+    padding: 9px;
+    color: var(--card-color);
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.HTML{
+    max-width: 70%;
+}
+
+.JAVAS{
+    max-width: 60%;
+}
+
+
+.PY{
+    max-width: 60%;
+}
+
+
+.SQL{
+    max-width: 40%;
+}

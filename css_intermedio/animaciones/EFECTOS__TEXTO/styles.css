@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-color: #222;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.text-conteiner{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    filter: drop-shadow( 0 0 15px #fff) drop-shadow(0 0 3px #f00);
+}
+
+.text{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 40px;
+    animation: steps(7);
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    overflow: hidden;
+    position: relative;
+}
+
+.text::selection{
+    background-color: transparent;
+}
+
+.text::after{
+    content: '';
+    width: 4px;
+    height: 80%;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    border-radius: 4px;
+    animation: titilar .36s infinite alternate;
+
+}
+
+@keyframes aparecer {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes titilar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

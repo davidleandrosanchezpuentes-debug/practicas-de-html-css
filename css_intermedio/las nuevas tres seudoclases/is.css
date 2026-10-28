@@ -1,0 +1,17 @@
+body{
+    background: #bbb;
+}
+/*legalmente tenia un section en frete de todo, haci funciona igula, pero no supe cual era el problema y por que  no me dejo usarlo segun como yo queria*/
+:is(.elemen1, .elemen2, .elemen3){
+    color: aqua;
+}
+
+
+/*entendemos que la funcion de is es agrupar*/
+
+/* body:is(h1, h2, h3, h4,)*/ 
+section :is(.elemen1, .elemen2){
+    color: yellow
+}
+
+/*si queremos que no cambie la espicificidad usamos where*/

@@ -1,0 +1,59 @@
+/*esta es la propiedad mas importante de display, mescla de bock y inline*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav{
+    background: #222;
+}
+
+.nav__lista{
+    margin: 0;
+    text-align: center;
+}
+
+
+.nav__item{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #ccc;
+    display: inline-block;
+    padding: 20px 25px;
+}
+
+.link:hover{
+    background: #666;
+}
+
+.link--buttom{
+    border: 1px solid #666;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #666;
+    color: #222;
+    text-transform: uppercase;
+    margin-left: 60px;
+    position: relative;
+    left: 100%;
+}
+
+.link--buttom:hover{
+    background: transparent;
+    color: #ccc;
+}
+
+/*esta es una barra de navegacion aun hay cosas que quiero aplicar y no se como, por ejemplo quiero que el log in pueda quedar solo en la esquina superior derecha y el resto se vayan a la esquina ezquierda, pero antes requiero saber sobre posición y diseño tambien*/
+
+/*tambien esta la propiedad display:none donde el elemento no ocupa nade de espacio en la pagina*/

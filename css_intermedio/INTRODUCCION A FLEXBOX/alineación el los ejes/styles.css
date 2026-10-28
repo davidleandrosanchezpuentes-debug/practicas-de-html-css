@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div, body{
+    box-sizing: border-box;
+}
+
+/*formas de alinear(start, en el inicio. end, en el final. center, se mueven desde el centro y se alinean hay. tambien estan tambien space-between, este toma el primer elemento y lo pone al inicio, el ultimo alfinal y distribulle el espacio sobrante con igual separacion para el resto de los elementos. 
+
+otro es space-around, este les da un margen el cual es igual a cada costado, osea sus margenes no colicionan, se suman 
+
+space-evenly, distristribuye todo equitativamente 
+)*/
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /*justify-content: space-evenly; lo comente para que se centrara con margin auto*/
+    height: 500px;
+    /*align-items: start; para una sola linea */
+    
+    /*esto me permite alinear el texto, con start puedo alinear todo en el pricipio con end al fina center al centro, pero estos alineal las cajas, pero baseline alinea el texto, si el tamaño del texto aumenta, el resto de cuadros quedara alineando su texto con los demas textos*/
+    
+    /*align-content: center;*/
+
+    
+}
+
+
+/*si usamos un solo elemento podemos usar el align-items center y el justify-conten center y queda todo en la mitad, pero tambien si usamos un elemento display: flex si le damos un margin auto queda en todo el centro de arriba y abajo*/
+.flex-item{
+    width: 110px;
+    background: transparent;
+    border: 2px solid #000;
+    margin: 10px;
+    color: #ccc;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+}
+
+.flex-item:first-child{
+    background: transparent;
+    font-size: 80px;
+    /*height: 300px;*/
+}
+
+.flex-item:last-child{
+    background: #68a;
+}
+

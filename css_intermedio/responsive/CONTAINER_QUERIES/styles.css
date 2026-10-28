@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/*tambien les podemos poner nombre*/
+
+.container {
+    container-type: inline-size; /*esta propiedad nos permite definir el tipo de contenedor que queremos para trabajarlo, el valor solo tiene en cuenta las dimenciones en linea, al contrario de size, el otro valor a parte de normal  */
+    container-name: hola;/*es el nombre de mi contenedor*/
+}
+
+p{
+    font-size: 10px;
+}
+
+@container hola (min-width: 800px){/*tambien puedes usar, max-width: y un numero para que se adapte al bajar su tamaño */
+    p{
+        font-size: 20px;
+        background-color: #48e;
+    }
+}
+
+/*no es tan compatible en todos los navegadores, pero es posible que ya se adapte a la mayoria  */

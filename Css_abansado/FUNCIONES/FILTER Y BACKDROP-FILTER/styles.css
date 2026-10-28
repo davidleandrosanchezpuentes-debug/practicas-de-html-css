@@ -1,0 +1,74 @@
+/*EN ESTE EJERCICIO PROBAREMOS TODOS LOS VALORES DE FILTER.*/
+
+/*el primer valor     filter: drop-shadow(0 0 15px #fff4); nos permite generar efectos de sombra sobre los elementos*/
+
+/*filter: blur(2px); este es un efecto que  nos permite conseeguir que un elemento tome un nivel de decenfoque el cual definimos con unidades de medida exectuando las de %*/
+
+/*filter: brightness(.4); nos sirve para definir el brillo de un elemento, basicamente nos permite lograr jugar con las capas de iluminacion de la imagen: muy util */
+
+/*filter: contrast(0); nos permite aumentar la intencidad tanto para los colores claros como para los colores oscuros */
+
+
+/*filter: grayscale(0); y filter: saturate(); parece que funcionan igual, pero parece que la primera es mejor, pero saturate nos permite consegir tonos de saturacion por encima de 1, con los que podemos lograr algo similar al filtro de color amarillo de las peliculas mejicanas, pero el primero solo nos deja alterar los tonos dentro de la escala de grices, y pues va de el color normal a una imagen gris, y el otro puede hacerlo tambien pero va por encima de 1 tambien */
+
+/*filter: hue-rotate(100deg); es como la propiedad de colores con el nombre raro que funcionava a partir de cambiar los grados en el circulo cromatico de 0 que son como rojos o los 200 que son tonos mas violetas o morados, entonces nos deja rotar el color de la imagen*/
+
+/*backdrop-filter: hue-rotate(80deg); funciona para aplicar esto que ya vimos pero solo afecta al contenedor mas no al contenido, solo toma el fondo, para eso sirve backdrop-filter: solo se aplica al contenedor, o al fondo del contenedor no al contenido */
+
+
+/*filter: invert(1); invierte los colores, primero del 0 0.5 reduce los grises, y luego lo lleva a de 0.5 1 donde los colores de invierten a sus opuestos en el circulo cromatico */
+
+
+/*filter:sepia(0.5) ; este es como un filtro raro de instagran pero se ve interesante igual*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
+    gap: 20px;
+    height: 50vh;
+}
+
+.contenedor{
+    padding: 20px 50px;
+    filter: contrast(1);
+    width: 100%;
+    position: relative;
+    display: flex;
+    right: auto;
+    top: 50vh;
+    z-index: 20;
+    flex-basis: 0;
+    flex-grow: 1;
+    backdrop-filter: hue-rotate(80deg);
+    filter: drop-shadow(0 0 15px #fff);/*se pueden poner varios valores unicamento separando con espacios, pero basicamente se apilan uno sobre el otro, asi que el orden importa visualmente*/
+}
+
+.imagen{
+    filter: drop-shadow(0 0 15px #fff4);
+    max-width: 100%;
+}
+
+
+.container{
+    background-color: #10232f;
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: hidden;
+    filter:  sepia(0.4);
+}
+
+.img{
+    min-width: 100%;
+}
+
+img::selection{
+    background-color: transparent;
+}

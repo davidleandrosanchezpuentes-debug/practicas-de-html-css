@@ -1,0 +1,53 @@
+/*efecto raro de practica para ver si  sale agrandar una cajita apartir del view*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    justify-content: center;
+}
+
+.crecedor{
+    width: 100%;
+    height: 200vh;
+    background-color: #f001;
+}
+
+.cajita{
+    background-color: blueviolet;
+    margin: auto;
+    width: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 10;
+    animation: crecer both;
+    animation-timeline: view();
+    animation-range: cover 10% contain 60%;
+    overflow-y: hidden;
+}
+
+.cajita img {
+    width: 100%;
+}
+
+@keyframes crecer {
+    0%{
+        width: 0%;
+        height: 1vh;
+    }
+    100%{
+        width: 70%;
+        height: 65vh;
+    }
+}
+

@@ -1,0 +1,126 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 12px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background: #26f;
+}
+
+form{   
+    max-width: 600px;
+    background:linear-gradient(#26f, #53f9);
+    padding: 2rem;
+    margin: auto;
+    border-radius: 1.3rem;
+    margin-top: 4em;
+    box-shadow: 0 0 15px 0 #ccc;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 2em;
+    padding: 0;
+    font-weight: bolder;
+    text-shadow: 4px 4px 6px #888;
+}
+.form_input{
+    padding: 10px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    background: transparent;
+    border-bottom: 3px solid #444;
+    box-shadow: 0 0 5px 2px #bbb;
+    border-radius: 8px;
+}
+
+input::placeholder{
+    color:#ccc;
+    font-weight: bolder;
+}
+
+textarea{
+    min-width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #444;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 5px 2px #bbb;
+    font-weight: bolder;
+    min-height: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+textarea::placeholder{
+    color:#ccc;
+}
+
+label{
+    text-align: left;
+    text-transform: uppercase;
+    color:#ccc;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.checkbox{
+    width: auto;
+    margin: 0 10px;
+}
+
+fieldset{
+    color: #ccc;
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 0 5px 2px #bbb;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+legend{
+    background-color: #26ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #bbb;
+}
+
+select, datalist{
+    color: #ccc;
+    font-weight: bolder;
+}
+
+option{
+    background: #26ff;
+    color: #ccc;
+}
+.submit{
+    width: auto;
+    box-sizing: border-box;
+    margin-left: 85%;
+    box-shadow: 0 0 5px 1px #bbb;
+    font-weight: bolder;
+    color: #ccc;
+    margin-top: 0;
+}
+
+datalist{
+    background-color: #ccc;
+}

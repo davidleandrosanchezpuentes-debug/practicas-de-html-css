@@ -1,0 +1,12 @@
+/*resulta que where funciona similar a is, peero la diferecia esta en la especifisidad puesto que is es mas especifico y esto hace que pueda ser mas relevante para la cascada, si miramos esto, nos damos cuenta de que la especificidad de where por si solo es de cero mas la de section es mas especifico, pero aun muy poco especifico a la vez */
+section .elemen1{
+    color: orange;
+}
+
+:where(.elemen1, .elemen2, .elemen3){
+    color: brown;
+}
+
+section :where(.elemen1, .elemen3){
+    color:blue
+}

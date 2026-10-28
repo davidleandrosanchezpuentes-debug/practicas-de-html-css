@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/*las cajas flexibles se pueden encoger mas no agrandarce*/
+
+/*flex-direction: (row, es la direccion del leguaje, row-reverse en contra de la direccion del leguaje, column, me permite ponerlas en columnas siendo la primera caja de forma ordenada hasta la tercera,  column-reverse, funciona igual que el otro reverse, pero ahora aplicado al column)*/
+.flexbox{
+    display: flex;
+    flex-direction: row;
+}
+/*si nosotros no definimos un tamaño el elemento o la caja ocupa todo el cross sasin, ojo no se si se escrive haci. j*/
+.flex-item{
+    width: 250px;
+    background: #911;
+    margin: 10px;
+    color: #ccc;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.flex-item:first-child{
+    background: #000;
+}
+
+.flex-item:last-child{
+    background: #68a;/*este color lo hice solo sin pensar pero los tres colores estan finos, porci necesitas colores a futuro que te gusten*/
+}

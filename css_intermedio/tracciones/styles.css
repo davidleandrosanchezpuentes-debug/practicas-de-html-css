@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/*transition-property: mas la propiedar que queremos trancicionar, ejem(color)
+transition-duration: mas el tienpo de transicion, ejem(1s)
+
+transition-delay: el tiempo antes de la transicion, ejem(3s)
+
+nota, se cuidadoso con las tanciciones, y que no sean tan, bruscas, mas si los valores no son matematicamente compatibles 
+
+
+otra cosainteresante son las curvas de animacion en una transicion de un un bloque que se mueve de posicion de un lugar a otro en nuestra pagina  
+*/
+
+
+/*
+.box{
+    width: 200px;
+    height: 200px;
+    background: #48e;
+    margin: auto;
+    margin-top: 150px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding-top: 10px;
+    transition-property: background-color, color, font-weight;
+    transition-duration: 1s;
+    transition-delay: 3s;
+}
+    */
+
+    /*trasicion de la caja*/
+
+    /*trasition-timing-function:(ease_la que tiene por defecto, ease-in_enpiesa lento terma rapido, ease-in-out_arranca lento y termina lento, ease-out_termina mas rapido pero es casi lineal, y la otra es entrar a cubit bezier y sacar de hay las curvas, o general las curvas  )*/
+.box{
+        width: 100px;
+    height: 100px;
+    background: #48e;
+    margin-top: 50px;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 0.7, 1,-0.51);
+    position: relative;
+    left: 0;
+}
+/*esto lo hago sabiendo que la especificidad no tomara en cuenta lo de arriba, pero si quiero dejarlo*/
+.box{
+    transition: left 2s cubic-bezier(0, 0.7, 1,-0.51) 1s;
+}
+
+/*
+.box:hover{
+    background: #68f;
+    color: #ccc;
+    font-weight: 100;
+}
+*/
+
+body:hover .box{
+    left: 400px;
+}

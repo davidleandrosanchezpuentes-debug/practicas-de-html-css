@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/*    object-fit: ;  es como la forma en que se adacta la imagen o el video */
+img{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #00f;
+    margin: 100px;
+}
+
+/*tambien esta el valor cover, es muy similar a lo que hicimos en la parte basica de css en background, pues puedes agregar un top un center un bottom un left etc.. 
+
+un valor interesante es, scale-down, el valor none hace que sin unportar el tamaño de lo que tu le diste a la imagen esta conserva so resolucion, pero la otra es, scale-down, mira el width y el height y la resolucion de la imagen el none,  toma la resolucion del que tenga el valor mas bajo, si la del contenedor es mas pequeña, o si su resolucion original es la mas pequeña */

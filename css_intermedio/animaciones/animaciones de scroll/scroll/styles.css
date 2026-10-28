@@ -1,0 +1,58 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+    height: 300vh;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+    box-sizing: border-box;
+}
+
+.crecedor{
+    height: 300vh;
+}
+
+.conteiner{
+    scroll-timeline: --containerScroll;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.barra{
+    border: 2px solid #f00;
+    padding: 5px;
+    border-radius: 35px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.barra__loudign{
+    padding: 30px;
+    width: 10%;
+    background-color: #f00;
+    border-radius: 29px;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --containerScroll;/*el timeline- define el tiempo en este caso esta basado en el scroll, y con scroll, podemos definir eel eje */
+    /*scroll-timeline-name y scroll-timeline-axis*/
+
+}
+
+
+.barra__loudign:active {
+    animation-play-state: paused;
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+        background-color: aqua;
+    }
+}

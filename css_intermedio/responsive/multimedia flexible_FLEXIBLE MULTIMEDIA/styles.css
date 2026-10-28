@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+/*IMAGEN ADACTABLE, APARTIR DE EL MAX-MIDTH*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+
+/*VIDEO ADACTABLE, 
+
+/*cosas a tener en cuenta en mi primer intento mi padding no era solo top, por ende se rompio todo, pues cubria mucho mas espacio, y el contenido se desbordaba 
+
+.contenedor{
+    position: relative;
+    max-width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+/*recordar, el video toma como referencia el position relative de el contenedor, se pociciona mal, por ende se requiere posicionarlo en left y top.
+video{
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+*/
+
+/*EN ESTE PUNTO DALTO CAMBIO EL ENFOQUE, LOGRAMOS ADACTAR EL VIDEO, PERO MENCIONA QUE LO ANTERIOR YA NO SE HACE PUES HAY UNA PROPIEDAD QUE LO HACE POR SI SOLO.*/
+
+/*METODO ACTUALIZADO*/
+/*adacta el contenedor al aspepet-ratio*/
+.contenedor {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video{
+    max-width: 100%;
+}

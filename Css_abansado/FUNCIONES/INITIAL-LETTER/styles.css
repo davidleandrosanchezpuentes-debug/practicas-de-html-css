@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: cursive;
+}
+
+.box{
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+/*nos permite cambiar las propiedades de la primera letra, en mosila no carga jajaja, el primer numeto que definimos es la altura en lineas y el segundo desde que linea empieza*/
+p::first-letter {
+    initial-letter: 3 2;
+}

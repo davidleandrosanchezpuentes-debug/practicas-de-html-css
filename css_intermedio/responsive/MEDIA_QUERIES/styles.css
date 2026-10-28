@@ -1,0 +1,28 @@
+/*las media queries son erramientas que nos permiten mostrar estilos de pagina distinto segun la definición*/
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    margin: auto;
+}
+
+.flex__item {
+    background-color: #ccc;
+    padding: 30px;
+    border: 2px solid #f00;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .flexbox{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body,  div{
+    box-sizing: border-box;
+}
+
+/*grid tiene tambien la propiedad de justify-items: similar a la propiedad de flexbox justify-content*/
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8,50px);
+    gap: 20px;
+    padding: 10px;
+    justify-items: stretch;/*esto me permite alinear a los elementos hijos dentro de las seldas solo en eje horizontal*/
+
+    /*para alinear las celdas usamos la mismas propiedades que con flexbox, justify-content y aling-items*/
+    justify-content: space-evenly;
+    align-items:stretch;/*funciona similar a cuando se usa en flexbox*/
+    align-content: space-evenly;/*me permite alinear las celdas en el eje vertical- respecto al contenedor */
+}
+/*por que digo que alineamos el hijo, por que solo el hijo se esta moviendo mas no la celdda ella no cambia */
+/*MODIFICAR SOLO EL PRIMER ELEMENTO*/
+
+.grid-item:first-child{
+    background-color: #e33;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.grid-item{
+    background-color: #78b;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

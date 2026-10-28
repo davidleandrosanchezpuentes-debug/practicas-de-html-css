@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.crecedor{
+    height: 100vh;
+}
+/*se puede hacer que tu animacion dependa de si otro elemento se ve o no */
+
+
+/*INVESTIGAR SOBRE ESTE TIPO DE ANIMACIONES */
+
+.box{
+    background-color: #48e;
+    padding: 20px;
+    animation-fill-mode: both;
+    animation: llenar-barra;
+    animation-timeline: view();/*la animacion depende de si se ve o no el elemento */
+    animation-range-start: cover 0%;/*nos define si queremos que la animacion se muestre un poco despues*/
+    animation-range-end: cover 80%
+}
+
+@keyframes llenar-barra{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

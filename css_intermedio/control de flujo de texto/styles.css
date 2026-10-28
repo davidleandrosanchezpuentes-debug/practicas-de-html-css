@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #999;
+}
+/*control de texto y su flujo
+ */
+
+/*white-space: (nowrap, quita los saltos de linea, pre, permite que los saltos de linea sean segun lo que definimos en nuestro editor, normal, saltos en linea pues normales y automaticos, y el ultimo es pre-wrap, el cual nos sirve para determinar los saltos en linea que nosotros en el editor determinemos, pero sin que se desvorde, y aparte tanbien respeta los saltos en linea entre letras ) */
+.box{
+    background: #48e;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 150px;
+    border: 2px solid #222;
+    color: #f00;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*para hacer los puntos suspencivos se usa estas propiedades (    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;) usualmente, estos puntos no son seleccionables*/
+
+    /*tambien esta el: word-break: break-all., esto para que las palabras se recorten para que no se desborden, auto-phrase, no se si ya salio pero se supone deberia identificar las palabras inteligentes, experimmental, deberia investigarla, normalmente esta propiedad no se altera*/
+
+/*word-wrap: (break-word esto es lo mismo pero haci se llamaba antes, la otra es anywhere esta me rompe las palabras largas si no entran )*/
+
+
+h1{
+    text-transform: capitalize;
+    text-wrap: balance;/*propiedad de texto y balor para que el titulo o text se vea mas ordenado, otro valor es pretty, es lo mismo que el balance pero aplicaado a los parrafos */
+    text-align: center;
+}
+
+

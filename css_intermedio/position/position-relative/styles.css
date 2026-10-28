@@ -1,0 +1,36 @@
+body{
+    background: #ededed;
+    margin: 10px;
+}
+/*position relative nos permite tomar uno de estos bloques y bosicionarlos en una posiscion usando el arriba, abajo, derecha, izquierda, y lo que pasa es que aun ocupa su posicion origina y haci, pero no evita que otro bloque ocupe ese espacion, usa como referrencia para moverse la posicion de inicio donde fue creado*/
+.box{
+    width: 100px;
+    height: 100px;
+    color: #ededed;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.box__red{
+    background: red;
+    top: -20px;
+    left: 30px
+}
+/*left y top titnen mas especificidad y prioridad, pero no implica no se pueda usar bottom y right*/
+.box__blue{
+    background: blue;
+    bottom: -60px;
+    z-index: 10;
+}
+
+.box__green{
+    background: green;
+    top: -100px;
+    right: -50px;
+    z-index: -10;
+}
+
+/*z-index nos permite cambiar las propiedades para cambiar la posicion de las cajas, segun su capa, si tengo una capa sobre otra capa puedo pasar la capa de mas arriba al fondo y la de el fondo a mas arriba, un metodo es ponerle numeros al z-index de 10 en 10, y el numero mas alto sera el que termite en frente de la pagina */
+

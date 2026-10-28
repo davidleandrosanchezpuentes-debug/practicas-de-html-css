@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI FORMULARIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h2> formulario de respuesta </h2>
+        <fieldset>
+            <legend>informacion de usuario </legend>
+            <div class="form_input">
+                <label>usuario
+                    <input type="text" placeholder="nombre de usuario">
+                </label>
+            </div>
+            <div class="form_input">
+                <label> email
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label> asunto
+                    <input type="text" placeholder="introduzca su motivo">
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="estado_civil"> estado civil</label>
+            <select name="type-of-user" id="estado_civil">
+                <option value="user1">soltero</option>
+                <option value="user2">casado</option>
+                <option value="user3">divorciado</option>
+                <option value="user4">prefierron no decirlo</option>
+            </select>
+        </div>
+        <div class="form_input">
+            <label> mensaje
+                <textarea rows="9" placeholder="Deje su mensaje"></textarea>
+            </label>
+        </div>
+            <div class="form_input" name="referente">
+                <label>referente
+                <input list="referente" name="type-of-user">
+                <datalist id="referente">
+                    <option value="redes">el usuari conoce nuestra pagina apartir de publicaciones redes</option>
+                    <option value="amigo">un amigo o conocido recomendo o menciono nuestra pagina</option>
+                    <option value="publicidad">te encontraste con la publucidad de nuestra pagina </option>
+                    <option value="otros">llegaste a la pagina por algun medio no mencionado </option>
+                </datalist>
+            </label>
+        </div>
+        <div class="form_input">
+            <label> acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+        <div class="form_input">
+                <input type="submit" class="submit">
+        </div>
+    </form>
+</body>
+</html>

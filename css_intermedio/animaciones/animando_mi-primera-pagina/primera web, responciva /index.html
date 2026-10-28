@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primera__Pagina-Respociva--completa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--SECCION DE NAVBAR-->
+  <header class="header">  
+    <label for="open-menu" role="button" class="header__button"> = </label>
+      <input type="checkbox" id="open-menu" class="checkbox">
+    <div class="header__logo-conteiner">
+      <a href="">
+        <img src="ADA13.png" class="header__logo" alt="logo de ada trece para pagina responciva">
+      </a>
+      </div>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+            <a href="#perfil">Sobre Mi</a>
+        </li>
+        <li class="nav__item">
+            <a href="#portafolio">Portafolio</a>
+        </li>
+        <li class="nav__item">
+            <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!--NAVBAR END-->
+
+    <!--SECCION DE PERFIL-->
+  <main class="perfil" id="perfil">
+    <div class="perfil__wrapper">
+      <div class="perfil__imagen-container">
+        <img src="dalto.png" alt="imagen dalto " class="perfil__imagen">
+      </div>
+
+      <div class="perfil__data-conteiner">
+        <div class="perfil__data">
+          <div class="perfil__descriccion">
+            <h1>¿Quien es David Sanchez?</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis perspiciatis necessitatibus eius? A, minus explicabo. Velit laborum aperiam, in soluta assumenda cumque eos, rerum debitis fuga delectus harum numquam.</p>
+          </div>
+
+          <div class="perfil__habilidades-conteiner">
+            <h2>Habilidades</h2>
+            <ul>
+              <li class="perfil__habilidades">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--80">80%</div>
+                </div>
+                <span class="perfil__habilidad-name">HTML</span>
+              </li>
+
+              <li class="perfil__habilidades">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--60">60%</div>
+                </div>
+                <span class="perfil__habilidad-name">CSS</span>
+              </li>
+
+              <li class="perfil__habilidades">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--10">10%</div>
+                </div>
+                <span class="perfil__habilidad-name">JavaScrip</span>
+              </li>
+
+              <li class="perfil__habilidades">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--40">40%</div>
+                </div>
+                <span class="perfil__habilidad-name">Python</span>
+              </li>
+
+              <li class="perfil__habilidades">
+                <div class="load-bar">
+                  <div class="load-bar__bar bar--8">8%</div>
+                </div>
+                <span class="perfil__habilidad-name">SQL</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <!--PERFIL END-->
+
+    <!--PORTAFOLIO-->
+  <section class="portafolio" id="portafolio">
+    <h2 class="portafolio__title"> Seción de Portafolio </h2>
+    <div class="portafolio__project-conteiner">
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 1</h3>
+      </div>
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 2</h3>
+      </div>
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 3</h3>
+      </div>
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 4</h3>
+      </div>
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 5</h3>
+      </div>
+      <div class="portafolio__project">
+        <h3 class="portafolio__project-name">Proyecto 6</h3>
+      </div>
+    </div>
+  </section>
+    <!--PORTAFOLIO END-->
+<!--SECCION DE FORMULARIO -->
+    <section class="form" id="contacto">
+      <h2 class="form__title"> CONTACTO </h2>
+      <form action="" class="form__form">
+        <div class="form__input">
+          <label> Nombre
+            <input type="text" placeholder="ingrese su nombre">
+          </label>
+        </div>
+        <div class="form__input">
+          <label> Apellido
+            <input type="text" placeholder="ingrese su Apellido">
+          </label>
+        </div>
+        <div class="form__input">
+          <label> Email
+            <input type="email" placeholder="ingrese su email">
+          </label>
+        </div>
+        <div class="form__input">
+          <label> Mensaje
+            <textarea placeholder="ingrese su mensaje"></textarea>
+          </label>
+        </div>
+        <div class="form__input">
+          <input type="submit" class="form__button">
+        </div>
+      </form>
+    </section>
+      <!--FORMULARIO END-->
+      <!--FOOTER SECTION-->
+    <footer>
+      <strong>ADA-13</strong>--&copy;Copyright</strong>
+    </footer>
+      <!--FOOTER END-->
+</body>
+</html>

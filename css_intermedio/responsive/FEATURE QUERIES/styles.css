@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*ESTO LO QUE EXPRESA ES QUE LA PROPIDAD COLOR SI AGREGARA SOLO SI EL NAVEGADOR SOPORTA EL VALOR OKLCH, EL CUEL ES UN VALOR DE LA PROPIEDAD DEL COLOR RELATIVAMENTE NUEVO PUDIENDO SER QUE ALGUN NAVEGADOR DES FASADO NO LO SOPORTE */
+@supports (color: oklch(30% 0.2 30)){
+    body{
+        color: oklch(80% 0.2 60);
+    }
+}
+
+/*EN ESTE CASO ES UN EJEMPLO TONTO, PERO ESTO NOS PERMITE HACER UN DICEÑO EN CASO DE QUE EL NAVEGADOR NO SOPORTE TODO UNA PROPIEDAD, COMO GRID, EN CASO DE QUE UN DICEÑO SE ROMPA, ENTONSES LO PODEMOS USAR ESTILOS QUE NOS PPERMITAN LOGRAR QUQE NUESTRA PAGINA NO SE ROMDPA  */
+
+/*ejemplo*/
+
+@supports (color: oklch(30% 0.2 30)){
+    body{
+        display: grid;
+    }
+}
+
+/*@supports not {
+
+    body{
+        display: flex;
+        flex-direction: column; este es el ejemplo de la siguiente parte del codigo 
+    }
+}*/

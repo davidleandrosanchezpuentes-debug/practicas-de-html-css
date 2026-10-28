@@ -1,0 +1,69 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background: #ccc;
+}
+
+
+div, body{
+    box-sizing: border-box;
+}
+
+/*flex es la propiedad que integra las otras tres propiedades para definir el tamaño de los items */
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 500px;
+    justify-content: start;
+    align-items: start;
+    background-color: #fff;
+    gap: 20px; /*define un margen para todos lados para todos los elementos que componen las diferentes cajas */
+}
+
+
+.flex-item{
+    background: #911;
+    color: #ccc;
+    font-weight: bolder;
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 200px;  /*0 1 auto orden */
+    /*flex-shrink: 1; /*flex-shrink: ; define cuantas beses  mas se encoje con relacion con los demas elementos*/
+    /*flex-basis: auto; /*define el tamaño base del elemento es le maximo de lo que se puede llegar a achicar */
+    /*flex-grow: 0; estas tres propiedades tienesn esos valores por defecto */
+
+    
+}
+
+.flex-item-5{
+    background: #000;
+    align-self: stretch; /*permite cambiar los valores de lineacion del elemento unico al que se decea alterar */
+}
+
+.flex-item:nth-child(2n){
+    background: #684;
+}
+
+.flex-item:first-child{
+    background: #331d1d;
+    /*flex-grow */ /*el flex-grow por defecto es 0, y el grow 1, es del doble de el resto, pero si el de todos de de 1, el doble sera 2*/
+}
+
+.flex-item:last-child{
+    background: #68a;
+    color: #911;
+    align-self: stretch;
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 300px;
+}
+
+/*la caja se rompe en pedasos, con el flex-grow si por ejemplo mi caja mide 5 espacios una caja ocupa 2 espacios y otra 1 y una mas 2 entonses consigues que la caja se rellene en su totalidad */
+
+.item--10{
+    background: #fff;
+}

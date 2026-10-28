@@ -1,0 +1,108 @@
+body{
+    font-size: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #bbb;
+    margin: 0;
+}
+
+.contenedor{
+    max-width: 280px;
+    margin: auto;
+    margin-top: 5em;
+    box-shadow: 0 0 10px 0 #ccc;
+    padding: 2.5em;
+    border-radius: 4px;
+    background-color: #444;
+    box-shadow: 0 0 15px 0 #000
+}
+
+div h1{
+    color: red;
+    font-style: italic;
+}
+
+.contenedor h1{
+    color: #ccc;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    border: 2px solid #666;
+    border-radius: 2.5em;
+
+} /*la cascada define que ante un elemento que resive una propiedad sobre escrita, se define cual se preserva segun el orden en que se escribe*/
+
+h1::first-letter{
+    color: #f00;
+    font-size: 3em;
+}
+
+#titulos{
+    color: #ccc;
+}
+
+.titulo{
+    color: blue;
+}
+/* en este caso al ser una clase se considera que fuimos mas espacificos al seleccionar un elemento, y el nivel de epacificidad cambio*/
+h2{
+    color: black;
+    padding: 1em;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+/* el nivel de especificidad mas alto es el de modificar elementos en liena desde el html, lo que no se debia hacer jejejej*/
+
+#parrafo{
+    color: green;
+}
+
+.parrafon{
+    color: #48e;
+}
+/* en este caso al ser una clase se considera que fuimos mas espacificos al seleccionar un elemento, y el nivel de epacificidad cambio*/
+div .parrafo{
+    color: #ccc !important;
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 1em;
+}
+/*!important es el mas importante dentro de la cascada en general*/
+
+/*tambien si trato de sobre escribir un importan el ultimo se queda amenos que usemos una clase o id para mayor especificida*/
+
+.listas{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+li{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: #bbb;
+}
+
+li::marker{
+    color: #444;
+}
+
+.temario{
+    border: 2px solid #666;
+    border-radius: 1em;
+    color: #ccc;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0.7em;
+}
+
+legend{
+    font-size: 1.6em;
+    color: #666;
+    padding: 0.5em;
+}
+

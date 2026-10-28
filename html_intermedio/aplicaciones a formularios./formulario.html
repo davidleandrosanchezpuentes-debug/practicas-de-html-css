@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><!--los labels estan buenos por que nos permiten selecionar un elemento de input al precionar el label-->
+    <form> <!--LABELS-->
+        <h2> formulario de respuesta </h2>
+        <fieldset>
+            <legend>Información de ingreso: </legend>
+            <!--SIMPLE INPUT-->
+            <div class="form_input">
+                <label> usuario:
+                <input type="text" placeholder="david sanchez">
+                </label>
+            </div>
+            <div class="form_input">
+                <label> email:
+                <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label> contraseña:
+                <input type="password" placeholder="introduce tu contraseña">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Respuesta del usuario: </legend>
+            <details class="form_input">
+                <summary> formulario </summary>
+                <!---SELECT Y OPTION-->
+                <div class="form_input">
+                    <label> Tipo de usuario:
+                        <select name="type-of-user">
+                            <option value="user1">numero_1</option>
+                            <option value="user2">numero_2</option>
+                            <option value="user3">numero_3</option>
+                        </select>
+                    </label>
+                </div>
+            <!--TEXTARIA-->
+                <div class="form_input">
+                    <label> mensaje:
+                <!--el textarea es como un elemento mas, abre y cierrra la etiqueta-->
+                    <textarea rows="7" maxlength="400" placeholder="deja tu mensaje"></textarea>
+                    </label>
+                </div>
+                <!--DATALIST Y OPYION-->
+                
+                <div class="form_input"> 
+                    <label> referente:
+                        <input list="referente" name="referente">        
+                        <datalist id="referente" name="type-of-user">
+                            <option value="user1"> David </option><!--puedo poner el david en el value y en donde esta david una descripción-->
+                            <option value="user2"> amigo </option>
+                            <option value="user3"> otros </option>
+                        </datalist>
+                    </label>
+                </fieldset>
+                </div>
+            </details>
+        <!--CHECKBOX-->
+            <div class="form_input">
+                <label for="checkbox"> Acecta los terminos y condiciones </label>
+                <input type="checkbox" class="checkbox" id="checkbox">
+            </div>    
+            <div class="submit">
+                <input type="submit" value="Acectar">
+            </div>    
+    </form> <!-- IMPORTANTE PARA QUE EL LABEL FUNCIONE SIN QUE ENCIERRE ENTRE SUS ETIQUETAS AL INPUT ENTONSES TENDREMOS QUE USAR UN: (ID EN LOS INPUT Y UN FOR EN EL LABEL)
+    SE VERIA ALGO COMO <LABEL FOR="EMAIL"> MENSAJE </LABEL>   < INPUT ID="EMAIL">-->
+</body>
+</html>

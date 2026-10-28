@@ -1,0 +1,42 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+    scroll-timeline: --body block
+}
+
+*{
+    box-sizing: border-box;
+}
+div{
+    box-sizing: border-box;
+}
+
+.crecedo{
+    height: 200vh;
+}
+
+.conteiner{
+    scroll-timeline: --conteinerScroll;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.barra{
+    background-color: #fff;
+    border-radius: 2px solid #48e;
+    padding: 6px;
+    position: fixed;
+    border-radius: 39px;
+    width: 100%;
+}
+
+.barra__loudign{
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --conteinerScroll;
+}

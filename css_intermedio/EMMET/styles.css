@@ -1,0 +1,6 @@
+/*emmet en css tambien se puede, por ejemplo, m10p que es un margin de 10% y haci se puede ir variadon en em rem  solo es m10 seria en px y haci, tambien funciona con padding*/
+
+header{
+    width: 10px; /*w10*/
+    height: 100%;/*h100p y haci se va haciendo */
+}

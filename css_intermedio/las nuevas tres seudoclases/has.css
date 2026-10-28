@@ -1,0 +1,37 @@
+/*recuerdas el valor que anterior mente le dimos al div, con la cual podiamos darle propiedades para el caso de que esstuviese vasio y otros para cuando estubiera con contenido */
+
+/*has usa para dar valores en caso de que un elemento tenga algo mas por ejemplo, (si esta seccion tiene un elemento, tomal cierta propiedad)*/
+
+section:has(.elemen1){
+    background: #0f0;
+}
+
+/*si el elemen1 desaparece del html el fondo verde igual */
+
+/*tambien podemos usarlo asi: ul:has(+div) basicamente dice si tenemos el div despues de ul, modifica ul*/
+
+ul:has(+div){
+    color: #f00;
+}
+
+/*otra cosa interesante que podemos hacer lo hacemos con el input:valid e invalid, pero que el efecto se muestre en un label*/
+
+label{
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+/*el has cambia el color del label en caso de que no sea valido o invalido */
+label:has(input:valid){
+    color: #00f
+}
+
+label:has(input:invalid){
+    color: #f00
+}
+
+label input{
+    margin: 10px;
+    padding: 5px 10px;
+    width: 45%;
+}
